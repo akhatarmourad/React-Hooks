@@ -1,13 +1,17 @@
-import { UseStateHook } from './hooks';
+import { UseStateHook, UseEffectHook, UseMemoHook } from './hooks';
 import './App.css';
 
 function App() {
   return (
-    <div className='p-5'>
+    <div className='p-5 font-jost'>
       {/* useState Hook */}
       <UseStateHook />
 
-      <hr />
+      {/* useEffect Hook */}
+      <UseEffectHook />
+
+      {/* useMemoHook */}
+      <UseMemoHook />
     </div>
   )
 }
